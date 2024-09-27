@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+section {
+  color: rgba(255, 255, 255, 0.938);
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+}
+
+.past-manifesto,
+.present-manifesto,
+.future-manifesto {
+  display: none;
+}
+
+body {
+  background-color: black;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 30px 0;
+  cursor: pointer;
+}
+
+.open-on-load {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.on-load-text {
+  font-size: 2rem;
+  color: white;
+  transition: 5s all;
+}
+
+.year-on-load {
+  opacity: 0;
+  font-size: 10rem;
+  background: linear-gradient(to right, #30cfd0, #c43ad6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section div {
+  width: 100%;
+  padding: 6rem 5rem;
+}
+
+.past-manifesto {
+  transition: 0.5s all;
+  transition: opacity 1s ease-in-out;
+}
+
+h1 {
+  font-family: 'Ibarra Real Nova', serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+  letter-spacing: 0.1rem;
+}
+
+.right-page {
+  margin-top: 0;
+  padding-top: 0;
+}
+.right-page p {
+  line-height: 1.7;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.right-page p:first-letter {
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 4.5rem;
+  float: left;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  line-height: 0.7;
+}
+
+.left-page {
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.left-page small {
+  font-style: italic;
+}
+
+.left-page img {
+  max-width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 900px) {
+  section {
+    flex-direction: row;
+    width: 100%;
+    max-width: 1800px;
+  }
+  section div {
+    width: 50%;
+  }
+  .left-page {
+    padding-top: 10rem;
+  }
+  .right-page {
+    padding-top: 6rem;
+    max-height: 100vh;
+    /* height: 100vh; */
+  }
+}
+
+.hover-image-past,
+.hover-image-present,
+.hover-image-future {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+  position: relative;
+}
+
+.bottom-text {
+  font-size: 1.5rem;
+}
